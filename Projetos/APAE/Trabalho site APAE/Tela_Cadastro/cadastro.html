@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Formulario responsivo com html e css</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="img-box content first-content">
+           
+                <div class="first-column">
+                    <h2 class="title title-primary">Bem vindo de volta!</h2>
+                    <p class="description description-primary">Para manter-se conectado conosco</p>
+                    <p class="description description-primary">faça o login com suas informações pessoais</p>
+                    <button id="signin" class="btn btn-primary">Conectar-se</button>
+                </div>    
+            
+            
+        </div>
+
+        <div class="form-box">
+
+            <div class="img-box2">
+                <img src="Apae_logo.png">
+            </div>
+
+
+                <div class="Titulo_2">
+                    <h2>Criar Conta</h2>
+                    <p> Já é um membro? <a href="#"> Login </a> </p>
+                </div>
+               
+                
+                <form action="">
+
+                    <div class="inputBox">
+                        <input type="text"  id="Nome"    required="required" > 
+                        <span>Primeiro nome</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email"  id="Email"    required="required" > 
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password"  id="Senha"    required="required" > 
+                        <span>Senha</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password"  id="ConfirmarSenha"    required="required" > 
+                        <span>Confirmar senha</span>
+                    </div>
+
+            
+                </form>
+
+                <div class="input-group2">
+                    <button class="fourth">Continuar</button>
+                </div>
+        </div>       
+        
+        
+        <div class="form-box2 ">        
+            
+            <form action="#">
+            
+
+                
+
+                    <div class="icone">
+                        <button class="buy-btn">
+                            <i class="fa-solid fa-arrow-left"></i>                              
+                        </button>
+
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="text"  id="Numero"    required="required" > 
+                        <span>Numero</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text"  id="Cidade"    required="required" > 
+                        <span>Cidade</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text"  id="CEP"    required="required" > 
+                        <span>CEP</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text"  id="CPF"    required="required" > 
+                        <span>CPF</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text"  id="DataDeNascimento"    required="required" > 
+                        <span>Data de nascimento</span>
+                    </div>
+           
+                   
+
+                    <div class="input-group">
+                        <button class="fourth">Cadastrar</button>
+                    </div>
+
+            
+
+            </form>
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function () {
+               if(btn.className === 'fourth') {
+                 document.querySelector('.form-box2').classList.add('open');
+                }  else if(btn.className === 'buy-btn') {
+                 document.querySelector('.form-box2').classList.remove('open');
+               }
+            });
+            
+        });
+        
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function () {
+            if(btn.className === 'fourth') {
+                document.querySelector('.form-box').classList.add('open');
+                }  else if(btn.className === 'buy-btn') {
+                document.querySelector('.form-box').classList.remove('open');
+            }
+            });
+            
+        });
+    </script>
+
+</body>
+</html>

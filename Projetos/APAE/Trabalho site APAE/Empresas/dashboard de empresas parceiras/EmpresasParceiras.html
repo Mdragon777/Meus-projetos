@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="../../css/comum.css">
+    <link rel="stylesheet" href="EmpresasParceiras.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+
+
+    
+
+    <title>Apae Guarulhos</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow" style="background-color: #2c9ada;">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+            <img src="../../images/logoNA.png" style="width: 120px; height:60px; margin-top: 5px; margin-left: 5px">
+        </a>
+
+        <button class="btn btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+            aria-controls="sidebar">
+            <i class="bi bi-justify"></i>
+        </button>
+        <!--
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end w-auto" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Teste1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teste2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teste3</a>
+                    </li>
+                </ul>
+            </div>
+        -->
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-start shadow-lg" tabindex="-1" id="sidebar" aria-labelledby="offcanvas">
+    <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvas">APAE</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="nav-links list-unstyled">
+            <li>
+                <a href="../comum/index.php">
+                    <i class="bx bx-home-alt-2"></i>
+                    <span class="title">Menu</span>
+                </a>
+            </li>
+            <li>
+                <a href="../comum/produtos.php">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="title">Produtos</span>
+                </a>
+            </li>
+            <li>
+                <a href="../comum/noticias.php">
+                    <i class='bx bx-news'></i>
+                    <span class="title">Eventos & Notícias</span>
+                </a>
+            </li>
+            <li>
+                <a href="../comum/">
+                    <i class='bx bx-donate-heart'></i>
+                    <span class="title">Doação</span>
+                </a>
+            </li>
+            <li>
+                <a href="../comum/index.php">
+                    <i class="bi bi-building"></i>
+                    <span class="title">Empresas Parceiras</span>
+                </a>
+            </li>
+        </ul>
+        <div class="position-absolute bottom-0 mb-3 dropup-center dropup">
+            <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle dropup"
+                id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../../images/user.png" alt="" width="32" height="32" class="me-2">[Nome do Usuário]
+            </a>
+            <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser">
+                <li><a class="dropdown-item" href="../comum/carteira.php">Carteira</a></li>
+                <li><a class="dropdown-item" href="../comum/meus_dados.php">Meus Dados</a></li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <!-- Banner Hero -->
+    <div
+        style="position: relative; background: url(hero.png) no-repeat center; background-size: cover; height: 500px; overflow: hidden;">
+         <div class="container">
+            <div class="text-secondary px-4 py-5 mb-4 mt-5 text-center">
+                <div class="py-5">
+                    <h1 class="display-5 fw-bold text-black">Associação de Pais e Amigos dos Excepcionais Guarulhos</h1>
+                    <div class="col-lg-10 mx-auto">
+                        <p class="fs-5 mb-4 text-black-70">Fundada em
+                            1° de Julho de 1979 por um grupo de voluntárias, professoras e pais, sem fins
+                            lucrativos, com o intuito de promover a atenção integral às pessoas com deficiência
+                            intelectual e múltipla.</p>
+                        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                            <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom
+                                button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <!-- texto -->
+        <div class="container_text ">
+            <div class="texto_inicial">
+                <div class="texto1">
+                    <h1 class="fs-2 mb-0">Porque continuar assinando o Amigo 10?</h1>
+                    <br>
+                    <p class="text-decoration-none text-black-10">Continue apoiando o programa Amigo 10 e faça a diferença na vida das pessoas com deficiência. Sua assinatura oferece recursos, oportunidades e serviços essenciais para promover uma vida mais inclusiva. Juntos, construímos um mundo mais igualitário e transformamos vidas. Seja parte dessa jornada inspiradora e continue a apoiar o Amigo 10.</p>
+                </div>
+            </div>
+            <div class="imagem1">
+                <img src="https://img.freepik.com/vetores-gratis/ilustracao-em-vetor-conceito-abstrato-de-filantropia-iniciativa-privada-generosidade-fundo-de-doacao-presente-monetario-apoio-financeiro-solucao-de-problema-publico-metafora-abstrata-de-filantropia-social_335657-4227.jpg?w=996&t=st=1685295734~exp=1685296334~hmac=32a3915d69c82673b0748c20030d571a0ada8507b18f6f66084cb863e3b83532" alt="">
+            </div>
+        </div>
+
+
+
+        <!-- Missão, Visão & Valores -->
+    <div style="background-color: rgb(255, 255, 255)">
+
+        <div class="container align-items-end py-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4 scroll_1">
+                <div class="col pe-2 ps-2">
+                    <div class="card h-100 card-shadow" style="border: none;">
+                        <img src="../../images/telescope.png" class="card-img-top mx-auto d-block w-25 mt-3">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Missão</h3>
+                            <p class="card-text text-center">Ser referência em atendimento na cidade, buscando a
+                                integração à sociedade desta população.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pe-2 ps-2">
+                    <div class="card h-100 card-shadow" style="border: none;">
+                        <img src="../../images/target.png" class="card-img-top mx-auto d-block w-25 mt-3" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Visão</h3>
+                            <p class="card-text text-center">Promover e articular ações de defesa de direitos e
+                                prevenção,
+                                orientações, prestação de serviços, apoio à família, direcionadas à melhoria de
+                                qualidade de vida da pessoa com deficiência e a construção de uma sociedade justa e
+                                solidária.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pe-2 ps-2">
+                    <div class="card h-100 card-shadow" style="border: none;">
+                        <img src="../../images/receive.png" class="card-img-top mx-auto d-block w-25 mt-3" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title text-center">Valores</h3>
+                            <p class="card-text text-center">Busca Constante da Excelência nos Serviços;
+                                Comprometimento com a Causa;
+                                Ética nas Relações e no Exercício das Atividades;
+                                Promoção do Exercício da Cidadania;
+                                Respeito as Diversidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="background-color: #ebebeb">
+
+
+        <div class="texto_parceiro">
+            <p class="fs-2 mb-0">Empresas Parceiras</p>
+            <p class="text-decoration-none text-black-50">Veja algumas de nosas empresas parceiras</p>
+            
+        </div>
+
+        <div class="containerEmpresas scroll_2">
+
+            
+
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                <li class="card">
+                    <div class="img"><img src="../../images/AlumiSA.jpg" alt="img" draggable="false"></div>
+                    <h2>Alumi S&A Kit Box e Ferragens</h2>
+                    <span>Empresa Mais Amiga, desde 2021.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../../images/GTNAutoPecas.jpg" alt="img" draggable="false"></div>
+                    <h2>GTN Auto Peças</h2>
+                    <span>Parceiro nos eventos da APAE Guarulhos.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../../images/Damapel.jpg" alt="img" draggable="false"></div>
+                    <h2>Damapel</h2>
+                    <span>Fornecedor de PHs.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../../images/Tambor-Line.jpg" alt="img" draggable="false"></div>
+                    <h2>Tambor-Line</h2>
+                    <span>Empresa Mais Amiga, desde 2021.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../../images/WMB.jpg" alt="img" draggable="false"></div>
+                    <h2>Grupo WMB</h2>
+                    <span> Sócio Contribuinte APAE Guarulhos, desde 2018.</span>
+                </li>
+                <li class="card">
+                    <div class="img"><img src="../../images/NRMonitoramentos.jpg" alt="img" draggable="false"></div>
+                    <h2>NR Monitoramentos</h2>
+                    <span>Sócio Contribuinte APAE Guarulhos, desde 2018.</span>
+                </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+
+    <!-- Últimas Notícias -->
+    <div style="background-color: #f9f9f9;">
+        <div class="container py-4">
+            <div class="text-center scroll_2">
+                <p class="fs-2 mb-0">Eventos & Notícias</p>
+                <a href="noticias.html" class="text-decoration-none text-black-50">Veja mais eventos e notícias clicando
+                    aqui</a>
+            </div>
+            <div class="row g-4 mt-1 mb-1 scroll_3">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Título da noticia 01<i class="bi bi-newspaper ms-2"></i>
+                            </h5>
+                            <span class="mt-0 mb-0 text-muted small">07/04/2023</span>
+                            <p class="card-text mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#noticia1">
+                                Ler mais<i class="bi bi-arrow-right ms-1"></i> </button>
+
+                            <div class="modal fade" id="noticia1" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-3">Titulo da noticia 01</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip </div>
+                                        <div class="modal-footer">
+                                            <p class="text-black-50">07/04/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Título do evento 01<i
+                                    class="bi bi-calendar-event ms-2"></i>
+                            </h5>
+                            <span class="mt-0 mb-0 text-muted small">09/04/2023</span>
+                            <p class="card-text mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#evento1">
+                                Ler mais<i class="bi bi-arrow-right ms-1"></i> </button>
+
+                            <div class="modal fade" id="evento1" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-3">Título do evento 01</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
+                                        <div class="modal-footer">
+                                            <p class="text-black-50">09/04/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Título da noticia 02<i class="bi bi-newspaper ms-2"></i>
+                            </h5>
+                            <span class="mt-0 mb-0 text-muted small">08/04/2023</span>
+                            <p class="card-text mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#noticia2">
+                                Ler mais<i class="bi bi-arrow-right ms-1"></i> </button>
+
+                            <div class="modal fade" id="noticia2" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-3">Titulo da noticia 02</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip </div>
+                                        <div class="modal-footer">
+                                            <p class="text-black-50">08/04/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold mb-0">Título do evento 02<i
+                                    class="bi bi-calendar-event ms-2"></i>
+                            </h5>
+                            <span class="mt-0 mb-0 text-muted small">09/04/2023</span>
+                            <p class="card-text mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+                            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#evento2">
+                                Ler mais<i class="bi bi-arrow-right ms-1"></i> </button>
+
+                            <div class="modal fade" id="evento2" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title fs-3">Título do evento 02</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
+                                        <div class="modal-footer">
+                                            <p class="text-black-50">09/04/2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start border-top-3 w-100" style="background: #2c9ada;">
+        <div class="container-fluid pt-3">
+
+            <div class="row">
+                <div class="col-md-2 text-center">
+                    <img class="mb-2" src="../../images/logoNA.png" style="width: 170px; height: 90px;">
+                </div>
+
+                <div class="col-md-5">
+                    <h6 class="text-uppercase ms-2 fw-bold text-center" style="color: rgb(255, 234, 0);">Localização
+                    </h6>
+                    <p class="text-start text-light small mt-2 ms-2 text-center"><i class="bi bi-geo-alt me-2"></i>Rua
+                        Segundo
+                        Tenente
+                        Aluisio
+                        de Farias, 141 Jardim Santa Mena - Guarulhos, SP</p>
+                </div>
+
+                <div class="col">
+                    <h6 class="text-uppercase text-center fw-bold" style="color: rgb(255, 234, 0);">Contato</h6>
+                    <p class="text-white small text-center ms-2"><i
+                            class="bi bi-envelope me-2"></i>parceria@apaeguarulhos.org.br
+                    </p>
+                    <p class="text-white small text-center ms-2"><i class="bi bi-telephone me-2"></i>(11) 2442-6439
+                    </p>
+                </div>
+
+
+                <!-- Redes sociais + Logo -->
+                <div class="col">
+                    <h6 class="text-uppercase text-center fw-bold me-2" style="color: rgb(255, 234, 0);">Redes
+                        sociais</h6>
+
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            <a class="btn btn-outline-light btn-floating me-2 text-end"
+                                href="https://www.facebook.com/apae.guarulhos" role="button">
+                                <i class="bi bi-facebook"></i></a>
+
+                            <a class="btn btn-outline-light btn-floating me-2 text-end"
+                                href="https://www.instagram.com/apae_guarulhos/" role="button">
+                                <i class="bi bi-instagram"></i></a>
+
+                            <a class="btn btn-outline-light btn-floating me-2 text-end"
+                                href="https://www.youtube.com/channel/UCKR7S6fCXGoUp2y5cVCQJmw" role="button">
+                                <i class="bi bi-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="container-fluid" style="background: #164b84;">
+            <div class="row">
+                <div class="col">
+                    <p class="text-start text-white small pt-2 ms-2 mb-2">&#169 Copyright 2022. Todos os
+                        direitos
+                        reservados
+                        a Apae
+                        Guarulhos.</p>
+                </div>
+                <div class="col">
+                    <p class="text-end text-white small pt-2 me-2 mb-2">Designed by Gustavo, Melissa, Murillo,
+                        Murilo</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- </section> -->
+    <script>
+        const btn_menu = document.querySelector(".btn-menu");
+        const side_bar = document.querySelector(".sidebar");
+
+        btn_menu.addEventListener("click", function () {
+            side_bar.classList.toggle("expand");
+            changebtn();
+        });
+
+        function changebtn() {
+            if (side_bar.classList.contains("expand")) {
+                btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else {
+                btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+            }
+        }
+    </script>
+
+    <!-- Scrollavel -->
+    <script>
+        window.sr = ScrollReveal({reset: true});
+
+        sr.reveal('.scroll_1', {duration: 1000});
+        sr.reveal('.scroll_2', {duration: 1000});
+        sr.reveal('.scroll_3', {duration: 1000});
+    </script>
+</body>
+
+<!-- Carrocel -->
+
+<script>
+    const wrapper = document.querySelector(".wrapper");
+const carousel = document.querySelector(".carousel");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const carouselChildrens = [...carousel.children];
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if(!isDragging) return; // if isDragging is false return from here
+    // Updates the scroll position of the carousel based on the cursor movement
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+    }
+    // If the carousel is at the end, scroll to the beginning
+    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+    clearTimeout(timeoutId);
+    if(!wrapper.matches(":hover")) autoPlay();
+}
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel after every 2500 ms
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
+</script>
+
+<!-- Gráfico -->
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+
+    <script>
+        function handleCredentialResponse(response) {
+            const data = jwt_decode(response.credential)
+            console.log(data)
+
+            fullName.textContent = data.name
+            sub.textContent = data.sub
+            given_name.textContent = data.given_name
+            family_name.textContent = data.family_name
+            email.textContent = data.email
+            verifiedEmail.textContent = data.email_verified
+            picture.setAttribute("src", data.picture)
+        }
+
+        window.onload = function () {
+
+            google.accounts.id.initialize({
+                client_id: "107161323498-kfqtti50so00lb13n6prli67g3dovpii.apps.googleusercontent.com",
+                callback: handleCredentialResponse
+            });
+            
+            google.accounts.id.renderButton(
+                document.getElementById("buttonDiv"),
+                {
+                    datatype:"icon",
+                    theme: "board",
+                    size: "large",
+                    type: "standard",
+                    shape: "circle",
+                    theme:"outline",
+                    text: "signin_with"
+                   
+
+                }  // customization attributes
+            );
+            google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <div id="buttonDiv"></div>
+
+    <p id="fullName"></p>
+    <p id="sub"></p>
+    <p id="given_name"></p>
+    <p id="family_name"></p>
+    <p id="email"></p>
+    <p id="verifiedEmail"></p>
+    <img id="picture"/>
+
+    <div id="g_id_onload"
+     data-client_id="a"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="a"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="icon"
+     data-shape="circle"
+     data-theme="outline"
+     data-text="signin_with"
+     data-size="medium">
+</div>
+    
+
+</body>
+
+</html>

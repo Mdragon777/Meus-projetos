@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Formulario responsivo com html e css</title>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div class="img-box content first-content">
+
+            <div class="first-column">
+                <h2 class="title title-primary">Junte-se a nós!</h2>
+                <p class="description description-primary"> para explorar um mundo de possibilidades </p>
+                <p class="description description-primary">Cadastre-se agora e descubra o que temos reservado para você</p>
+                <button id="signin" class="btn btn-primary">Cadastre-se</button>
+            </div>
+        </div>
+
+        <div class="form-box">
+          
+
+            <div class="Titulo_2">
+                <h2>Login</h2>
+                <p> Ainda não é um membro? </p>
+                <p><a href="#">Cadastre-se </a> </p>
+            </div>
+
+            <form action="">
+                <div class="inputBox on">
+                    <input type="email" class="sim" id="email" required>
+                    <span>Email</span>
+                </div>
+
+
+                <div class="inputBox on">
+                    <input type="password" class="sim" id="senha" required>
+                    <span>Senha</span>
+                    <div id="icon" onclick="showHide()"></div>
+                </div>
+
+                <div class="input-group">
+                    <button class="fourth2">Logar</button>
+                </div>
+            </form>
+
+            
+
+        </div>
+
+
+    </div>
+
+    <!-- senha -->
+
+    <script>
+
+        function showHide() {
+            const password = document.getElementById('senha');
+            const icon = document.getElementById('icon');
+
+            if (password.type === 'password') {
+                password.setAttribute('type', 'text');
+                icon.classList.add('hide')
+            }
+            else {
+                password.setAttribute('type', 'password');
+                icon.classList.remove('hide')
+            }
+        }
+
+        function showHide2() {
+            const password = document.getElementById('ConfirmarSenha');
+            const icon = document.getElementById('icon2');
+
+            if (password.type === 'password') {
+                password.setAttribute('type', 'text');
+                icon.classList.add('hide')
+            }
+            else {
+                password.setAttribute('type', 'password');
+                icon.classList.remove('hide')
+            }
+        }
+
+    </script>
+
+    <!-- inputs -->
+    <script>
+        document.querySelectorAll('input').forEach(inpur => {
+            inpur.addEventListener('focus', function () {
+                if (inpur.className === "sim") {
+                    inpur.classList.add("on");
+                    inpur.parentNode.classList.add("on2");
+                }
+            });
+
+            inpur.addEventListener('focusout', function () {
+                if (inpur.value === inpur.getAttribute("placeholder") || inpur.value === "") {
+                    inpur.classList.remove("on");
+                    inpur.parentNode.classList.remove("on2");
+                }
+            });
+
+        });
+
+    </script>
+
+    
+</body>
+
+</html>

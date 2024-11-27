@@ -1,0 +1,126 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 30px 100px;
+}
+body header .brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+body header .menu {
+  display: flex;
+  gap: 20px;
+  margin-left: auto;
+  /*
+          @media( max-width: 920px){
+              position: absolute;
+              top: 8vh;
+              right: 0;
+              width: 50vw;
+              height: 92vh;
+              flex-direction: column;
+              align-items: center;
+
+
+          }
+          */
+}
+body header .menu a {
+  color: white;
+  text-decoration: none;
+}
+body header .menuhover {
+  color: purple;
+}
+body header .menu .conta a {
+  border: 2px solid purple;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0px 5% 0px;
+  gap: 2px;
+}
+
+.login {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h1 {
+  margin-right: auto;
+  font-size: 54px;
+  font-weight: bold;
+  color: #fff;
+}
+.login .texto {
+  margin-left: auto;
+}
+.login .texto p {
+  color: #fff;
+}
+.login form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: auto;
+}
+.login form .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.login form .input input {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 340px;
+}
+.login form .input input::-moz-placeholder {
+  color: #898989;
+}
+.login form .input input::placeholder {
+  color: #898989;
+}
+.login form .botao {
+  margin-right: auto;
+}
+.login form .botao button {
+  color: #fff;
+  width: 150px;
+  border-radius: 10px;
+  background: purple;
+  padding: 12px;
+  border: none;
+}/*# sourceMappingURL=index.css.map */
